@@ -1,0 +1,37 @@
+{
+  "name": "nano-preact-app-template",
+  "version": "0.0.1",
+  "description": "Template for nano-preact-app CLI",
+  "main": "index.js",
+  "repository": "git@github.com:abhisheksoni27/nano-preact-app-template.git",
+  "author": "Abhishek Soni <abhisheksoni2720@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "preact": "^8.4.2"
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      [
+        "@babel/plugin-transform-react-jsx",
+        {
+          "pragma": "h"
+        }
+      ]
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "@babel/preset-env": "^7.3.4",
+    "parcel": "^1.11.0"
+  }
+}
